@@ -13,7 +13,7 @@ const worker = new Worker("emailQueue", async (job: Job) => {
     console.log(`Email sent to ${email}`);
 }, {
     connection: {
-        host: "localhost",
+        host: "myredis",
         port: 6379,
     }
 })
