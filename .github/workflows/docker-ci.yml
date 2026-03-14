@@ -29,8 +29,8 @@ jobs:
 
       - name: Tag images
         run: |
-          docker tag queue-api ${{ secrets.DOCKERHUB_USERNAME }}/queue-api:latest
-          docker tag queue-worker ${{ secrets.DOCKERHUB_USERNAME }}/queue-worker:latest
+          docker tag async-job-queue-api ${{ secrets.DOCKERHUB_USERNAME }}/queue-api:latest
+          docker tag async-job-queue-worker ${{ secrets.DOCKERHUB_USERNAME }}/queue-worker:latest
 
       - name: Push images
         run: |
